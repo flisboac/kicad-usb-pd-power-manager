@@ -1,0 +1,634 @@
+QALCULATE WORKSPACE FILE
+
+[General]
+version=5.5.1
+keypad_type=0
+show_keypad=1
+hide_numpad=0
+show_bases=0
+
+[Mode]
+min_deci=0
+use_min_deci=0
+max_deci=2
+use_max_deci=0
+precision=10
+interval_display=0
+min_exp=-1
+negative_exponents=0
+sort_minus_last=1
+number_fraction_format=-1
+complex_number_form=0
+use_prefixes=1
+use_prefixes_for_all_units=0
+use_prefixes_for_currencies=0
+use_binary_prefixes=0
+prefixes_default=1
+abbreviate_names=1
+all_prefixes_enabled=0
+denominator_prefix_enabled=1
+place_units_separately=1
+auto_post_conversion=3
+mixed_units_conversion=3
+number_base=10
+number_base_expression=10
+read_precision=0
+assume_denominators_nonzero=1
+warn_about_denominators_assumed_nonzero=1
+structuring=1
+angle_unit=1
+functions_enabled=1
+variables_enabled=1
+calculate_functions=1
+calculate_variables=1
+variable_units_enabled=1
+sync_units=1
+unknownvariables_enabled=0
+units_enabled=1
+allow_complex=1
+allow_infinite=1
+indicate_infinite_series=0
+show_ending_zeroes=1
+rounding_mode=0
+approximation=-1
+concise_uncertainty_input=0
+interval_calculation=1
+rpn_mode=0
+chain_mode=0
+limit_implicit_multiplication=0
+parsing_mode=0
+simplified_percentage=-1
+spacious=1
+excessive_parenthesis=0
+default_assumption_type=4
+default_assumption_sign=0
+
+[History]
+history_time=1745402179
+history_expression=tps7a26_Vfb = 1.24V
+history_parse=save(<span style="color:#005858">1.24</span> <span style="color:#008000">volts</span>, <span style="color:#585800"><i class="symbol">tps7a26_Vfb</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">1.24</span> <span style="color:#008000">V</span>
+history_time=1745402251
+history_expression=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x + \y)
+history_parse=save(<span style="color:#585800">tps7a26<sub>Vfb</sub></span> × (<span style="color:#005858">1</span> + <span style="color:#585800"><i class="symbol">x</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">tps7a26_calculate_Vout(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">tps7a26_Vfb*(1+\x+\y)</i></span>
+history_time=1745402274
+history_expression=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
+history_parse=tps7a26CalculateVout(<span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>, <span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">1.24</span> <span style="color:#008000">V</span> + <span style="color:#005858">2.48</span> <span style="color:#008000">kWb ∕ F</span>
+history_time=1745402296
+history_expression=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x / \y)
+history_parse=save(<span style="color:#585800">tps7a26<sub>Vfb</sub></span> × (<span style="color:#005858">1</span> + (<span style="color:#585800"><i class="symbol">x</i></span> ∕ <span style="color:#585800"><i class="symbol">y</i></span>)), <span style="color:#585800"><i class="symbol">tps7a26_calculate_Vout(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">tps7a26_Vfb*(1+\x*\y^-1)</i></span>
+history_time=1745402298
+history_expression=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
+history_parse=tps7a26CalculateVout(<span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>, <span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">2.48</span> <span style="color:#008000">V</span>
+history_time=1745402434
+history_expression=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / tps7a26_Ifb × 100))
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> + <span style="color:#585800"><i class="symbol">z</i></span>) ≤ (<span style="color:#585800"><i class="symbol">x</i></span> ∕ (<span style="color:#008000">tonne·</span><span style="color:#008000">picosecond</span> × <span style="color:#005858">7</span> <span style="color:#008000">ares</span> × <span style="color:#005858">26</span> × if(<span style="color:#008000">barn</span> × <span style="color:#005858">100</span>))), <span style="color:#585800"><i class="symbol">tps7a26_Vout_check(Vout, R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y+\z<=\x*(t*ps*7 a*26*if(b*100))^-1</i></span>
+history_time=1745402452
+history_expression=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / (tps7a26_Ifb × 100)))
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> + <span style="color:#585800"><i class="symbol">z</i></span>) ≤ (<span style="color:#585800"><i class="symbol">x</i></span> ∕ (<span style="color:#008000">tonne·</span><span style="color:#008000">picosecond</span> × <span style="color:#005858">7</span> <span style="color:#008000">ares</span> × <span style="color:#005858">26</span> × if(<span style="color:#008000">barn</span> × <span style="color:#005858">100</span>))), <span style="color:#585800"><i class="symbol">tps7a26_Vout_check(Vout, R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y+\z<=\x*(t*ps*7 a*26*if(b*100))^-1</i></span>
+history_time=1745402466
+history_expression=tps7a26_Vout_check(Vout, R1, R2) := ((\y + \z) <= ((\x / (tps7a26_Ifb × 100))))
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> + <span style="color:#585800"><i class="symbol">z</i></span>) ≤ (<span style="color:#585800"><i class="symbol">x</i></span> ∕ (<span style="color:#008000">tonne·</span><span style="color:#008000">picosecond</span> × <span style="color:#005858">7</span> <span style="color:#008000">ares</span> × <span style="color:#005858">26</span> × if(<span style="color:#008000">barn</span> × <span style="color:#005858">100</span>))), <span style="color:#585800"><i class="symbol">tps7a26_Vout_check(Vout, R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y+\z<=\x*(t*ps*7 a*26*if(b*100))^-1</i></span>
+history_time=1745402482
+history_expression=tps7a26_Ifb := 10 nA
+history_parse=save(<span style="color:#005858">10</span> <span style="color:#008000">nanoamperes</span>, <span style="color:#585800"><i class="symbol">tps7a26_Ifb</i></span>)
+history_result=<span style="color:#005858">10</span> <span style="color:#008000">nA</span>
+history_time=1745402492
+history_expression=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
+history_parse=tps7a26CalculateVout(<span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>, <span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">2.48</span> <span style="color:#008000">V</span>
+history_time=1745402522
+history_expression=tps7a26_Vout_check(2.48 V, 1 Kohm, 1 Kohm)
+history_parse=tps7a26VoutCheck(<span style="color:#005858">2.48</span> <span style="color:#008000">volts</span>, <span style="color:#005858">1</span> <span style="color:#008000">kelvin·ohm</span>, <span style="color:#005858">1</span> <span style="color:#008000">kelvin·ohm</span>)
+history_result=<span style="color:#005858">2</span> <span style="color:#008000">K·Ω</span> − (<span style="color:#005858">12 400</span> ∕ (<span style="color:#005858">91</span> × if(<span style="color:#005858">10<sup>−26</sup></span> <span style="color:#008000">m<sup>2</sup></span>))) <span style="color:#008000">mC<sup>−1</sup>·s<sup>−3</sup></span> ≤ <span style="color:#005858">0</span>
+history_time=1745402572
+history_expression=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm)
+history_parse=tps7a26VoutCheck(<span style="color:#005858">2.48</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">2</span> <span style="color:#008000">kΩ</span> − (<span style="color:#005858">12 400</span> ∕ (<span style="color:#005858">91</span> × if(<span style="color:#005858">10<sup>−26</sup></span> <span style="color:#008000">m<sup>2</sup></span>))) <span style="color:#008000">mC<sup>−1</sup>·s<sup>−3</sup></span> ≤ <span style="color:#005858">0</span>
+history_time=1745402687
+history_expression=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
+history_parse=tps7a26CalculateVout(<span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>, <span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">2.48</span> <span style="color:#008000">V</span>
+history_time=1745402697
+history_expression=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm, 0)
+history_parse=tps7a26VoutCheck(<span style="color:#005858">2.48</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">2</span> <span style="color:#008000">kΩ</span> − (<span style="color:#005858">12 400</span> ∕ (<span style="color:#005858">91</span> × if(<span style="color:#005858">10<sup>−26</sup></span> <span style="color:#008000">m<sup>2</sup></span>))) <span style="color:#008000">mC<sup>−1</sup>·s<sup>−3</sup></span> ≤ <span style="color:#005858">0</span>
+history_time=1745402739
+history_expression=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= (\x / (tps7a26_Ifb × 100))
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> + <span style="color:#585800"><i class="symbol">z</i></span>) ≤ (<span style="color:#585800"><i class="symbol">x</i></span> ∕ (<span style="color:#585800">tps7a26<sub>Ifb</sub></span> × <span style="color:#005858">100</span>)), <span style="color:#585800"><i class="symbol">tps7a26_Vout_check(Vout, R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y+\z<=\x*(tps7a26_Ifb*100)^-1</i></span>
+history_time=1745402745
+history_expression=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm)
+history_parse=tps7a26VoutCheck(<span style="color:#005858">2.48</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">1</span>
+history_time=1745404041
+history_expression=tps7a26_find_r2(Vout, r1):=\y/((\x/tps7a26_Vfb)−1)
+history_parse=save(<span style="color:#585800"><i class="symbol">y</i></span> ∕ ((<span style="color:#585800"><i class="symbol">x</i></span> ∕ <span style="color:#585800">tps7a26<sub>Vfb</sub></span>) − <span style="color:#005858">1</span>), <span style="color:#585800"><i class="symbol">tps7a26_find_r2(Vout, r1)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x*tps7a26_Vfb^-1+(-1)*1)^-1</i></span>
+history_time=1745404052
+history_expression=tps7a26_find_r2(Vout, R1):=\y/((\x/tps7a26_Vfb)−1)
+history_parse=save(<span style="color:#585800"><i class="symbol">y</i></span> ∕ ((<span style="color:#585800"><i class="symbol">x</i></span> ∕ <span style="color:#585800">tps7a26<sub>Vfb</sub></span>) − <span style="color:#005858">1</span>), <span style="color:#585800"><i class="symbol">tps7a26_find_r2(Vout, R1)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x*tps7a26_Vfb^-1+(-1)*1)^-1</i></span>
+history_time=1745404078
+history_expression=tps7a26_find_r2(3.3V, 2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">1.203 883 495</span> <span style="color:#008000">MΩ</span>
+history_time=1745404113
+history_expression=Vldo_fb_r1 = 2M Ohm
+history_parse=save((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#585800"><i class="symbol">Vldo_fb_r1</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">2</span> <span style="color:#008000">MΩ</span>
+history_time=1745404137
+history_expression=Vldo_fb_r2_3V3 = tps7a26_find_r2(3.3V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_3V3</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">1.203 883 495</span> <span style="color:#008000">MΩ</span>
+history_time=1745404148
+history_expression=Vldo_fb_r2_5V = tps7a26_find_r2(5V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_5V</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">659.574 468 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745404390
+history_expression=Σ(1/\x, 0, 0)
+history_parse=sum(<span style="color:#005858">1</span> ∕ <span style="color:#585800"><i class="symbol">x</i></span>, <span style="color:#005858">0</span>, <span style="color:#005858">0</span>)
+history_result=<span style="color:#005858">1</span> ∕ <span style="color:#005858">0</span>
+history_time=1745404456
+history_expression=r_parallel(v: vector):=1/Σ(1/\x, −inf, +inf)
+history_parse=save(<span style="color:#005858">1</span> ∕ sum(<span style="color:#005858">1</span> ∕ <span style="color:#585800"><i class="symbol">x</i></span>, −<span style="color:#008000">inch</span>, <span style="color:#008000">inch</span>), <span style="color:#585800"><i class="symbol">r_parallel(v: vector)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">1*sum(1*\x^-1,(-1) in,in)^-1</i></span>
+history_time=1745404472
+history_expression=r_parallel(v: vector):=1/Σ(1 / \x, −inf, +inf)
+history_parse=save(<span style="color:#005858">1</span> ∕ sum(<span style="color:#005858">1</span> ∕ <span style="color:#585800"><i class="symbol">x</i></span>, −<span style="color:#008000">inch</span>, <span style="color:#008000">inch</span>), <span style="color:#585800"><i class="symbol">r_parallel(v: vector)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">1*sum(1*\x^-1,(-1) in,in)^-1</i></span>
+history_time=1745404630
+history_expression=r_parallel_2(R1, R2):=1/(1/\x+1/\y)
+history_parse=save(<span style="color:#005858">1</span> ∕ ((<span style="color:#005858">1</span> ∕ <span style="color:#585800"><i class="symbol">x</i></span>) + (<span style="color:#005858">1</span> ∕ <span style="color:#585800"><i class="symbol">y</i></span>)), <span style="color:#585800"><i class="symbol">r_parallel_2(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">1*(1*\x^-1+1*\y^-1)^-1</i></span>
+history_time=1745404644
+history_expression=r_parallel_2(1000 ohm, 1000 ohm)
+history_parse=r_parallel_2(<span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>, <span style="color:#005858">1000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">500</span> <span style="color:#008000">Ω</span>
+history_time=1745404683
+history_expression=Vldo_fb_r2_3V3 = tps7a26_find_r2(3.3V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_3V3</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">1.203 883 495</span> <span style="color:#008000">MΩ</span>
+history_time=1745404706
+history_expression=Vldo_fb_r2_5V = tps7a26_find_r2(5V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_5V</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">659.574 468 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745405270
+history_expression=Vldo_fb_r1 = 1.5M Ohm
+history_parse=save((<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#585800"><i class="symbol">Vldo_fb_r1</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">1.5</span> <span style="color:#008000">MΩ</span>
+history_time=1745405284
+history_expression=Vldo_fb_r2_3V3 = tps7a26_find_r2(3.3V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_3V3</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">902.912 621 4</span> <span style="color:#008000">kΩ</span>
+history_time=1745406429
+history_expression=Vldo_fb_r2_5 = tps7a26_find_r2(5V, Vldo_fb_r1)
+history_parse=save(tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#585800">VldoFbR1</span>), <span style="color:#585800"><i class="symbol">Vldo_fb_r2_5</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result_approximate=<span style="color:#005858">494.680 851 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745406823
+history_expression=tps7a26_calculate_Vout(1.5M Ohm, 820000 ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">820 000</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.508 292 683</span> <span style="color:#008000">V</span>
+history_time=1745406839
+history_expression=tps7a26_find_r2(5V, 2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">659.574 468 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745406944
+history_expression=tps7a26_find_r2(5V, 2.2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">725.531 914 9</span> <span style="color:#008000">kΩ</span>
+history_time=1745407010
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 680k ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">680</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.251 764 706</span> <span style="color:#008000">V</span>
+history_time=1745407021
+history_expression=tps7a26_find_r2(3.3V, 2.2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">1.324 271 845</span> <span style="color:#008000">MΩ</span>
+history_time=1745407049
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 1.2M ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.513 333 333</span> <span style="color:#008000">V</span>
+history_time=1745407104
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 680k ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">680</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.251 764 706</span> <span style="color:#008000">V</span>
+history_time=1745407195
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 1.2M ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.513 333 333</span> <span style="color:#008000">V</span>
+history_time=1745407200
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 1.5M ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.058 666 667</span> <span style="color:#008000">V</span>
+history_time=1745407205
+history_expression=tps7a26_calculate_Vout(2M Ohm, 1.5M ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">2.893 333 333</span> <span style="color:#008000">V</span>
+history_time=1745407251
+history_expression=tps7a26_find_r2(3.3V, 2.2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">1.324 271 845</span> <span style="color:#008000">MΩ</span>
+history_time=1745407345
+history_expression=tps7a26_find_r2(5V, 2.2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">725.531 914 9</span> <span style="color:#008000">kΩ</span>
+history_time=1745407446
+history_expression=1/(1/725531+1/130000)
+history_parse=<span style="color:#005858">1</span> ∕ ((<span style="color:#005858">1</span> ∕ <span style="color:#005858">725 531</span>) + (<span style="color:#005858">1</span> ∕ <span style="color:#005858">130 000</span>))
+history_result_approximate=<span style="color:#005858">110 246.1863</span>
+history_time=1745407471
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 120K ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">120</span> <span style="color:#008000">kelvin·ohms</span>)
+history_result_approximate=<span style="color:#005858">1.24</span> <span style="color:#008000">V</span> + <span style="color:#005858">22.733 333 33</span> <span style="color:#008000">kV ∕ K</span>
+history_time=1745407474
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 120k ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">120</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">23.973 333 33</span> <span style="color:#008000">V</span>
+history_time=1745407872
+history_expression=(1.3M×470k)/(1.3M+470k)
+history_parse=((<span style="color:#005858">1.3</span> × <span style="color:#005858">1 000 000</span>) × (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>)) ∕ ((<span style="color:#005858">1.3</span> × <span style="color:#005858">1 000 000</span>) + (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>))
+history_result_approximate=<span style="color:#005858">345 197.7401</span>
+history_time=1745408527
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, r_parallel_2((1.2M Ohm + 100k Ohm), (1.5M Ohm + 150k Ohm)))
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)))
+history_result_approximate=<span style="color:#005858">4.991 794 872</span> <span style="color:#008000">V</span>
+history_time=1745408860
+history_expression=tps7a26_find_r2(3.3V, 2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">1.203 883 495</span> <span style="color:#008000">MΩ</span>
+history_time=1745408955
+history_expression=tps7a26_find_r2(5V, 2M Ohm)
+history_parse=tps7a26FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">659.574 468 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745409464
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm, 470k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), (<span style="color:#005858">1</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">546.135 342 4</span> <span style="color:#008000">kΩ</span>
+history_time=1745409538
+history_expression=r_parallel_2(R1, R2):=(\x×\y)/(\r+\y)
+history_parse=save((<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800"><i class="symbol">y</i></span>) ∕ (<span style="color:#585800"><i class="symbol">r</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">r_parallel_2(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\x*\y*('r'+\y)^-1</i></span>
+history_time=1745409550
+history_expression=r_parallel_2(R1, R2):=(\x×\y)/(\x+\y)
+history_parse=save((<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800"><i class="symbol">y</i></span>) ∕ (<span style="color:#585800"><i class="symbol">x</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">r_parallel_2(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\x*\y*(\x+\y)^-1</i></span>
+history_time=1745409560
+history_expression=r_parallel_2(1000, 1000)
+history_parse=r_parallel_2(<span style="color:#005858">1000</span>, <span style="color:#005858">1000</span>)
+history_result=<span style="color:#005858">500</span>
+history_time=1745409564
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm, 470k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), (<span style="color:#005858">1</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">546.135 342 4</span> <span style="color:#008000">kΩ</span>
+history_time=1745409573
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm + 470k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">661.673 212 9</span> <span style="color:#008000">kΩ</span>
+history_time=1745409596
+history_expression=tps7a26_calculate_Vout(2.2M Ohm, 661673 ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">661 673</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.362 882 451</span> <span style="color:#008000">V</span>
+history_time=1745409602
+history_expression=tps7a26_calculate_Vout(2M Ohm, 661673 ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">661 673</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">4.988 074 955</span> <span style="color:#008000">V</span>
+history_time=1745409647
+history_expression=tps7a26_calculate_Vout(2M Ohm, 1203300 ohm)
+history_parse=tps7a26CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">1 203 300</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.300 998 920</span> <span style="color:#008000">V</span>
+history_time=1745409693
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 470k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">699.373 890 6</span> <span style="color:#008000">kΩ</span>
+history_time=1745409754
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 510k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">510</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">706.292 863 8</span> <span style="color:#008000">kΩ</span>
+history_time=1745409776
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 390k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">390</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">684.941 467 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745409822
+history_expression=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm + 510k Ohm)
+history_parse=r_parallel_2(((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>), ((<span style="color:#005858">1</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">510</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">669.657 981 1</span> <span style="color:#008000">kΩ</span>
+history_time=1745411172
+history_expression=tps63070_calculate_Vout(R1, R2):= tps63070_Vfb × ((\x + \y) / \y)
+history_parse=save((<span style="color:#008000">tonne·</span><span style="color:#008000">picosecond</span> × <span style="color:#005858">63 070</span> <span style="color:#008000">volt·femtobarns</span>) × ((<span style="color:#585800"><i class="symbol">x</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>) ∕ <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">tps63070_calculate_Vout(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">t*ps*63070 V*fb*((\x+\y)*\y^-1)</i></span>
+history_time=1745411179
+history_expression=tps63070_Vfb := 0.8V
+history_parse=save(<span style="color:#005858">0.8</span> <span style="color:#008000">volt</span>, <span style="color:#585800"><i class="symbol">tps63070_Vfb</i></span>)
+history_result=<span style="color:#005858">800</span> <span style="color:#008000">mV</span>
+history_time=1745411214
+history_expression=tps63070_calculate_Vout(2M Ohm, 220k Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">6.364 336 364 × 10<sup>−44</sup></span> <span style="color:#008000">Wb·g·m<sup>2</sup></span>
+history_time=1745411263
+history_expression=tps63070_calculate_Vout(2M, 220k)
+history_parse=tps63070CalculateVout(<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>, <span style="color:#005858">220</span> × <span style="color:#005858">1000</span>)
+history_result_approximate=<span style="color:#005858">6.364 336 364 × 10<sup>−44</sup></span> <span style="color:#008000">Wb·g·m<sup>2</sup></span>
+history_time=1745411292
+history_expression=tps63070_calculate_Vout(R1, R2) :=  0.8 × ((\x + \y) / \y)
+history_parse=save(<span style="color:#005858">0.8</span> × ((<span style="color:#585800"><i class="symbol">x</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>) ∕ <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">tps63070_calculate_Vout(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">(4/5)*((\x+\y)*\y^-1)</i></span>
+history_time=1745411294
+history_expression=tps63070_calculate_Vout(2M, 220k)
+history_parse=tps63070CalculateVout(<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>, <span style="color:#005858">220</span> × <span style="color:#005858">1000</span>)
+history_result=<span style="color:#005858">444 ∕ 55</span>
+history_result=<span style="color:#005858">8</span> + <span style="color:#005858">4 ∕ 55</span>
+history_result_approximate=<span style="color:#005858">8.072 727 273</span>
+history_time=1745411306
+history_expression=tps63070_calculate_Vout(R1, R2) :=  0.8V × ((\x + \y) / \y)
+history_parse=save((<span style="color:#005858">0.8</span> <span style="color:#008000">volt</span>) × ((<span style="color:#585800"><i class="symbol">x</i></span> + <span style="color:#585800"><i class="symbol">y</i></span>) ∕ <span style="color:#585800"><i class="symbol">y</i></span>), <span style="color:#585800"><i class="symbol">tps63070_calculate_Vout(R1, R2)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">(4/5) V*((\x+\y)*\y^-1)</i></span>
+history_time=1745411308
+history_expression=tps63070_calculate_Vout(2M, 220k)
+history_parse=tps63070CalculateVout(<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>, <span style="color:#005858">220</span> × <span style="color:#005858">1000</span>)
+history_result_approximate=<span style="color:#005858">8.072 727 273</span> <span style="color:#008000">V</span>
+history_time=1745411775
+history_expression=tps63070_calculate_Vout(2M Ohm, 271186 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">271 186</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">6.700 009 588</span> <span style="color:#008000">V</span>
+history_time=1745411789
+history_expression=tps63070_calculate_Vout(2M Ohm, 330000 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">330 000</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.648 484 848</span> <span style="color:#008000">V</span>
+history_time=1745411794
+history_expression=tps63070_calculate_Vout(2M Ohm, 470000 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">470 000</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">4.204 255 319</span> <span style="color:#008000">V</span>
+history_time=1745412324
+history_expression=tps63070_calculate_Vout(2M Ohm, 640000 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">640 000</span> <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">3.3</span> <span style="color:#008000">V</span>
+history_time=1745412366
+history_expression=tps63070_calculate_Vout(2M Ohm, 615384 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">615 384</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.400 002 600</span> <span style="color:#008000">V</span>
+history_time=1745412702
+history_expression=r_parallel_2(220k + 150k, 615384)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), <span style="color:#005858">615 384</span>)
+history_result_approximate=<span style="color:#005858">231 069.3902</span>
+history_time=1745412767
+history_expression=tps63070_calculate_Vout(2M Ohm, 370000 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">370 000</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.124 324 324</span> <span style="color:#008000">V</span>
+history_time=1745413192
+history_expression=r_parallel_2(220k + 150k, 820k + 100k)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">820</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">263 875</span> + <span style="color:#005858">125 ∕ 129</span>
+history_result_approximate=<span style="color:#005858">263 875.9690</span>
+history_time=1745414136
+history_expression=r_parallel_2(1.2M + 3.3k, 820k + 100k)
+history_parse=r_parallel_2((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) + (<span style="color:#005858">3.3</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">820</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>))
+history_result_approximate=<span style="color:#005858">521 375.2178</span>
+history_time=1745414147
+history_expression=tps63070_calculate_Vout(2M Ohm, 521375 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">521 375</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.868 808 439</span> <span style="color:#008000">V</span>
+history_time=1745414271
+history_expression=tps63070_calculate_Vout(2M Ohm, 927901 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">927 901</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">2.524 321 883</span> <span style="color:#008000">V</span>
+history_time=1745414579
+history_expression=tps63070_find_r2(Vout, R1) := \y / ((\x/0.8V) − 1)
+history_parse=save(<span style="color:#585800"><i class="symbol">y</i></span> ∕ ((<span style="color:#585800"><i class="symbol">x</i></span> ∕ (<span style="color:#005858">0.8</span> <span style="color:#008000">volt</span>)) − <span style="color:#005858">1</span>), <span style="color:#585800"><i class="symbol">tps63070_find_r2(Vout, R1)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x*((4/5) V)^-1+(-1)*1)^-1</i></span>
+history_time=1745414591
+history_expression=tps63070_find_r2(5.1, 1.5M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">5.1</span>, (<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result=(<span style="color:#005858">12 000 000</span> ∕ (<span style="color:#005858">51</span> <span style="color:#008000">s</span> − <span style="color:#005858">8</span> <span style="color:#008000">Wb</span>)) <span style="color:#008000">Wb·Ω</span>
+history_time=1745414597
+history_expression=tps63070_find_r2(5.1V, 1.5M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">5.1</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">279.069 767 4</span> <span style="color:#008000">kΩ</span>
+history_time=1745414616
+history_expression=tps63070_find_r2(5.1V, 2M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">5.1</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">372.093 023 3</span> <span style="color:#008000">kΩ</span>
+history_time=1745414659
+history_expression=tps63070_find_r2(3.4V, 1.2M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">3.4</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">369.230 769 2</span> <span style="color:#008000">kΩ</span>
+history_time=1745414663
+history_expression=tps63070_find_r2(3.4V, 1.5M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">3.4</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.5</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">461.538 461 5</span> <span style="color:#008000">kΩ</span>
+history_time=1745414666
+history_expression=tps63070_find_r2(3.4V, 1.2M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">3.4</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">369.230 769 2</span> <span style="color:#008000">kΩ</span>
+history_time=1745414723
+history_expression=tps63070_find_r2(5.1V, 1.2M Ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">5.1</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">223.255 814 0</span> <span style="color:#008000">kΩ</span>
+history_time=1745414934
+history_expression=r_parallel_find_r2(R, R1) := (\x × \y) / (1 − \x)
+history_parse=save((<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800"><i class="symbol">y</i></span>) ∕ (<span style="color:#005858">1</span> − <span style="color:#585800"><i class="symbol">x</i></span>), <span style="color:#585800"><i class="symbol">r_parallel_find_r2(R, R1)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\x*\y*(1+(-1)*\x)^-1</i></span>
+history_time=1745414962
+history_expression=r_parallel_find_r2(223255, 1.2M)
+history_parse=r_parallel_find_r2(<span style="color:#005858">223 255</span>, <span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>)
+history_result_approximate=<span style="color:#005858">−</span><span style="color:#005858">1 200 005.375</span>
+history_time=1745414990
+history_expression=r_parallel_2(1.2M, 1.2M)
+history_parse=r_parallel_2(<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>, <span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>)
+history_result=<span style="color:#005858">600 000</span>
+history_time=1745415109
+history_expression=tps63070_calculate_Vout(2M Ohm, 570k Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">570</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">3.607 017 544</span> <span style="color:#008000">V</span>
+history_time=1745415119
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 570k Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, (<span style="color:#005858">570</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">2.484 210 526</span> <span style="color:#008000">V</span>
+history_time=1745415168
+history_expression=r_parallel_2(220k + 150k, 470k + 100k)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">224 361</span> + <span style="color:#005858">33 ∕ 47</span>
+history_result_approximate=<span style="color:#005858">224 361.7021</span>
+history_time=1745415180
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 224 361 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">224 361</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.078 818 511</span> <span style="color:#008000">V</span>
+history_time=1745415218
+history_expression=r_parallel_2(220k + 150k, 470k + 120k)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">120</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">227 395</span> + <span style="color:#005858">5 ∕ 6</span>
+history_result_approximate=<span style="color:#005858">227 395.8333</span>
+history_time=1745415232
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 227395 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">227 395</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.021 728 710</span> <span style="color:#008000">V</span>
+history_time=1745415257
+history_expression=r_parallel_2(220k + 150k, 470k + 82k)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">82</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">221 518</span> + <span style="color:#005858">202 ∕ 461</span>
+history_result_approximate=<span style="color:#005858">221 518.4382</span>
+history_time=1745415265
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 221518 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">221 518</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.133 733 602</span> <span style="color:#008000">V</span>
+history_time=1745417780
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 220k Ohm + 150k Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, ((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">3.394 594 595</span> <span style="color:#008000">V</span>
+history_time=1745417793
+history_expression=r_parallel_2(220k + 150k, 470k + 100k)
+history_parse=r_parallel_2((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">224 361</span> + <span style="color:#005858">33 ∕ 47</span>
+history_result_approximate=<span style="color:#005858">224 361.7021</span>
+history_time=1745417826
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 224361 ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">224 361</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.078 818 511</span> <span style="color:#008000">V</span>
+history_time=1745417846
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 220k ohm + 120k ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, ((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">120</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">3.623 529 412</span> <span style="color:#008000">V</span>
+history_time=1745417851
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 220k ohm + 150k ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, ((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">150</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">3.394 594 595</span> <span style="color:#008000">V</span>
+history_time=1745417876
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 220k ohm + 120k ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, ((<span style="color:#005858">220</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">120</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">3.623 529 412</span> <span style="color:#008000">V</span>
+history_time=1745417931
+history_expression=tps63070_find_r2(3.3V, 1.2M ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">3.3</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">384</span> <span style="color:#008000">kΩ</span>
+history_time=1745418051
+history_expression=tps63070_find_r2(5V, 1.2M ohm)
+history_parse=tps63070FindR2(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, (<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">228.571 428 6</span> <span style="color:#008000">kΩ</span>
+history_time=1745418155
+history_expression=r_parallel_2(330k + 51k, 470k + 100k)
+history_parse=r_parallel_2((<span style="color:#005858">330</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">51</span> × <span style="color:#005858">1000</span>), (<span style="color:#005858">470</span> × <span style="color:#005858">1000</span>) + (<span style="color:#005858">100</span> × <span style="color:#005858">1000</span>))
+history_result=<span style="color:#005858">228 359</span> + <span style="color:#005858">197 ∕ 317</span>
+history_result_approximate=<span style="color:#005858">228 359.6215</span>
+history_time=1745418165
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 228 359.6215)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">228 359.6215</span>)
+history_result_approximate=<span style="color:#005858">800</span> <span style="color:#008000">mV</span> + <span style="color:#005858">4.203 895 565</span> <span style="color:#008000">Wb ∕ F</span>
+history_time=1745418171
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 228359 Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, <span style="color:#005858">228 359</span> <span style="color:#008000">ohms</span>)
+history_result_approximate=<span style="color:#005858">5.003 907 006</span> <span style="color:#008000">V</span>
+history_time=1745418192
+history_expression=tps63070_calculate_Vout(1.2M Ohm, 330k Ohm + 51k Ohm)
+history_parse=tps63070CalculateVout((<span style="color:#005858">1.2</span> × <span style="color:#005858">1 000 000</span>) <span style="color:#008000">ohms</span>, ((<span style="color:#005858">330</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">51</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>))
+history_result_approximate=<span style="color:#005858">3.319 685 039</span> <span style="color:#008000">V</span>
+history_time=1745418214
+history_expression=330k Ohm + 51k Ohm
+history_parse=((<span style="color:#005858">330</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">51</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
+history_result=<span style="color:#005858">381</span> <span style="color:#008000">kΩ</span>
+expression_history=330k Ohm + 51k Ohm
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 330k Ohm + 51k Ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 228359 Ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 228 359.6215)
+expression_history=r_parallel_2(330k + 51k, 470k + 100k)
+expression_history=tps63070_find_r2(5V, 1.2M ohm)
+expression_history=tps63070_find_r2(3.3V, 1.2M ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 220k ohm + 120k ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 220k ohm + 150k ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 224361 ohm)
+expression_history=r_parallel_2(220k + 150k, 470k + 100k)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 220k Ohm + 150k Ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 221518 Ohm)
+expression_history=r_parallel_2(220k + 150k, 470k + 82k)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 227395 Ohm)
+expression_history=r_parallel_2(220k + 150k, 470k + 120k)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 224 361 Ohm)
+expression_history=tps63070_calculate_Vout(1.2M Ohm, 570k Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 570k Ohm)
+expression_history=r_parallel_2(1.2M, 1.2M)
+expression_history=r_parallel_find_r2(223255, 1.2M)
+expression_history=r_parallel_find_r2(R, R1) := (\x × \y) / (1 − \x)
+expression_history=tps63070_find_r2(5.1V, 1.2M Ohm)
+expression_history=tps63070_find_r2(3.4V, 1.2M Ohm)
+expression_history=tps63070_find_r2(3.4V, 1.5M Ohm)
+expression_history=tps63070_find_r2(5.1V, 2M Ohm)
+expression_history=tps63070_find_r2(5.1V, 1.5M Ohm)
+expression_history=tps63070_find_r2(5.1, 1.5M Ohm)
+expression_history=tps63070_find_r2(Vout, R1) := \y / ((\x/0.8V) − 1)
+expression_history=tps63070_calculate_Vout(2M Ohm, 927901 Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 521375 Ohm)
+expression_history=r_parallel_2(1.2M + 3.3k, 820k + 100k)
+expression_history=r_parallel_2(220k + 150k, 820k + 100k)
+expression_history=tps63070_calculate_Vout(2M Ohm, 370000 Ohm)
+expression_history=r_parallel_2(220k + 150k, 615384)
+expression_history=tps63070_calculate_Vout(2M Ohm, 615384 Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 640000 Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 470000 Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 330000 Ohm)
+expression_history=tps63070_calculate_Vout(2M Ohm, 271186 Ohm)
+expression_history=tps63070_calculate_Vout(2M, 220k)
+expression_history=tps63070_calculate_Vout(R1, R2) :=  0.8V × ((\x + \y) / \y)
+expression_history=tps63070_calculate_Vout(R1, R2) :=  0.8 × ((\x + \y) / \y)
+expression_history=tps63070_calculate_Vout(2M Ohm, 220k Ohm)
+expression_history=tps63070_Vfb := 0.8V
+expression_history=tps63070_calculate_Vout(R1, R2):= tps63070_Vfb × ((\x + \y) / \y)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm + 510k Ohm)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 390k Ohm)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 510k Ohm)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1.2M Ohm + 470k Ohm)
+expression_history=tps7a26_calculate_Vout(2M Ohm, 1203300 ohm)
+expression_history=tps7a26_calculate_Vout(2M Ohm, 661673 ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 661673 ohm)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm + 470k Ohm)
+expression_history=r_parallel_2(1.2M Ohm + 3.3k Ohm, 1M Ohm, 470k Ohm)
+expression_history=r_parallel_2(1000, 1000)
+expression_history=r_parallel_2(R1, R2):=(\x×\y)/(\x+\y)
+expression_history=r_parallel_2(R1, R2):=(\x×\y)/(\r+\y)
+expression_history=tps7a26_find_r2(5V, 2M Ohm)
+expression_history=tps7a26_find_r2(3.3V, 2M Ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, r_parallel_2((1.2M Ohm + 100k Ohm), (1.5M Ohm + 150k Ohm)))
+expression_history=(1.3M×470k)/(1.3M+470k)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 120k ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 120K ohm)
+expression_history=1/(1/725531+1/130000)
+expression_history=tps7a26_find_r2(5V, 2.2M Ohm)
+expression_history=tps7a26_find_r2(3.3V, 2.2M Ohm)
+expression_history=tps7a26_calculate_Vout(2M Ohm, 1.5M ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 1.5M ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 1.2M ohm)
+expression_history=tps7a26_calculate_Vout(2.2M Ohm, 680k ohm)
+expression_history=tps7a26_calculate_Vout(1.5M Ohm, 820000 ohm)
+expression_history=Vldo_fb_r2_5 = tps7a26_find_r2(5V, Vldo_fb_r1)
+expression_history=Vldo_fb_r2_3V3 = tps7a26_find_r2(3.3V, Vldo_fb_r1)
+expression_history=Vldo_fb_r1 = 1.5M Ohm
+expression_history=Vldo_fb_r2_5V = tps7a26_find_r2(5V, Vldo_fb_r1)
+expression_history=r_parallel_2(1000 ohm, 1000 ohm)
+expression_history=r_parallel_2(R1, R2):=1/(1/\x+1/\y)
+expression_history=r_parallel(v: vector):=1/Σ(1 / \x, −inf, +inf)
+expression_history=r_parallel(v: vector):=1/Σ(1/\x, −inf, +inf)
+expression_history=Σ(1/\x, 0, 0)
+expression_history=Vldo_fb_r1 = 2M Ohm
+expression_history=tps7a26_find_r2(Vout, R1):=\y/((\x/tps7a26_Vfb)−1)
+expression_history=tps7a26_find_r2(Vout, r1):=\y/((\x/tps7a26_Vfb)−1)
+expression_history=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm)
+expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= (\x / (tps7a26_Ifb × 100))
+expression_history=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm, 0)
+expression_history=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
+expression_history=tps7a26_Vout_check(2.48 V, 1 Kohm, 1 Kohm)
+expression_history=tps7a26_Ifb := 10 nA
+expression_history=tps7a26_Vout_check(Vout, R1, R2) := ((\y + \z) <= ((\x / (tps7a26_Ifb × 100))))
+expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / (tps7a26_Ifb × 100)))
+expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / tps7a26_Ifb × 100))
+expression_history=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x / \y)
+expression_history=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x + \y)
+expression_history=tps7a26_Vfb = 1.24V
+
+[Definitions]
+<?xml version="1.0"?>
+<QALCULATE version="5.5.2"><category><title>Temporary</title><variable><names>s:tps7a26_Vfb</names><value>(31/25) V</value></variable><variable><names>s:tps7a26_Ifb</names><value>10 nA</value></variable><variable><names>Vldo_fb_r1</names><value>1500000 ohm</value></variable><variable><names>Vldo_fb_r2_3V3</names><value>(93000000/103) ohm</value></variable><variable><names>Vldo_fb_r2_5V</names><value>(31000000/47) ohm</value></variable><variable><names>Vldo_fb_r2_5</names><value>(23250000/47) ohm</value></variable><variable><names>s:tps63070_Vfb</names><value>(4/5) V</value></variable></category><category><title>Temporary</title><function><names>tps7a26_calculate_Vout</names><expression>tps7a26_Vfb*(1+\x*\y^-1)</expression></function><function><names>tps7a26_Vout_check</names><expression>\y+\z&lt;=\x*(tps7a26_Ifb*100)^-1</expression></function><function><names>tps7a26_find_r2</names><expression>\y*(\x*tps7a26_Vfb^-1+(-1)*1)^-1</expression></function><function><names>as:r_parallel</names><expression>1*sum(1*\x^-1,(-1) in,in)^-1</expression></function><function><names>r_parallel_2</names><expression>\x*\y*(\x+\y)^-1</expression></function><function><names>tps63070_calculate_Vout</names><expression>(4/5) V*((\x+\y)*\y^-1)</expression></function><function><names>tps63070_find_r2</names><expression>\y*(\x*((4/5) V)^-1+(-1)*1)^-1</expression></function><function><names>r_parallel_find_r2</names><expression>\x*\y*(1+(-1)*\x)^-1</expression></function></category></QALCULATE>

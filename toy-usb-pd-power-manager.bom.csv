@@ -1,0 +1,50 @@
+Id+ADs-Designator+ADs-Footprint+ADs-Order Quantity+ADs-Manufacturer Name+ADs-Manufacturer Part Number+ADs-Supplier and ref
+1+ADs-Q11,Q10,Q8+ADs-SOT+AC0-23+ADs-3+ADs-Alpha +ACY- Omega Semi+ADs-AO3400A+ADs-
+2+ADs-C28,C27,C25,C24,C23,C21,C19,C18,C17,C16,C15,C9+ADs-C+AF8-0805+AF8-2012Metric+ADs-12+ADs-+ADs-SMD MLCC Ceramic capacitor 22uF 35V X7R 20+ACU- 0805 Imperial+ADs-
+3+ADs-C30,C26,C31,C22,C20,C11,C7,C6,C5+ADs-C+AF8-0402+AF8-1005Metric+ADs-9+ADs-+ADs-SMD MLCC Ceramic capacitor 100nF 35V X7R 20+ACU- 0402 Imperial+ADs-
+4+ADs-C29,C8,C2+ADs-C+AF8-0805+AF8-2012Metric+ADs-3+ADs-+ADs-SMD MLCC Ceramic capacitor 10uF 35V X7R 20+ACU- 0805 Imperial+ADs-
+5+ADs-C14,C13,C1+ADs-C+AF8-0402+AF8-1005Metric+ADs-3+ADs-+ADs-SMD MLCC Ceramic capacitor 47nF 35V X7R 20+ACU- 0402 Imperial+ADs-
+6+ADs-C12,C10+ADs-C+AF8-0402+AF8-1005Metric+ADs-2+ADs-+ADs-SMD MLCC Ceramic capacitor 10pF 35V X7R 20+ACU- 0402 Imperial+ADs-
+7+ADs-R57,R56,R50,R35+ADs-R+AF8-0402+AF8-1005Metric+ADs-4+ADs-+ADs-Thick Film Resistor SMD 56K Ohm 0402 Imperial 1+ACU-+ADs-
+8+ADs-R55+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 51K Ohm 0402 Imperial 1+ACU-+ADs-
+9+ADs-R54+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 68K Ohm 0402 Imperial 1+ACU-+ADs-
+10+ADs-R53+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 1.5M Ohm 0402 Imperial 1+ACU-+ADs-
+11+ADs-R46,R29+ADs-R+AF8-0402+AF8-1005Metric+ADs-2+ADs-+ADs-Thick Film Resistor SMD 1.5K Ohm 0402 Imperial 1+ACU-+ADs-
+12+ADs-R45+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 1K Ohm 0402 Imperial 1+ACU-+ADs-
+13+ADs-R44+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 510 Ohm 0402 Imperial 1+ACU-+ADs-
+14+ADs-R43+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 2.2K Ohm 0402 Imperial 1+ACU-+ADs-
+15+ADs-R42+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 220K Ohm 0402 Imperial 1+ACU-+ADs-
+16+ADs-R41+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 330K Ohm 0402 Imperial 1+ACU-+ADs-
+17+ADs-R40+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 510K Ohm 0402 Imperial 1+ACU-+ADs-
+18+ADs-R39,R25,R23,R14,R12,R11,R10+ADs-R+AF8-0402+AF8-1005Metric+ADs-7+ADs-+ADs-Thick Film Resistor SMD 1M Ohm 0402 Imperial 1+ACU-+ADs-
+19+ADs-R38+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 470K Ohm 0402 Imperial 1+ACU-+ADs-
+20+ADs-R28+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 5.1K Ohm 0402 Imperial 1+ACU-+ADs-
+21+ADs-R27+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 10K Ohm 0402 Imperial 1+ACU-+ADs-
+22+ADs-R26+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 15K Ohm 0402 Imperial 1+ACU-+ADs-
+23+ADs-R24+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 2M Ohm 0402 Imperial 1+ACU-+ADs-
+24+ADs-R22,R21,R20,R19+ADs-R+AF8-0402+AF8-1005Metric+ADs-4+ADs-+ADs-Thick Film Resistor SMD 4.7K Ohm 0402 Imperial 1+ACU-+ADs-
+25+ADs-R18,R17,R16,R15,R13,R9,R8,R7,R6+ADs-R+AF8-0402+AF8-1005Metric+ADs-9+ADs-+ADs-Thick Film Resistor SMD 10M Ohm 0402 Imperial 1+ACU-+ADs-
+26+ADs-R5+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 100 Ohm 0402 Imperial 1+ACU-+ADs-
+27+ADs-R4+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 10 Ohm 0402 Imperial 1+ACU-+ADs-
+28+ADs-R3,R2+ADs-R+AF8-0402+AF8-1005Metric+ADs-2+ADs-+ADs-Thick Film Resistor SMD 330 Ohm 0402 Imperial 1+ACU-+ADs-
+29+ADs-R1+ADs-R+AF8-0402+AF8-1005Metric+ADs-1+ADs-+ADs-Thick Film Resistor SMD 0 Ohm 0402 Imperial 1+ACU-+ADs-
+30+ADs-D15+ADs-LED+AF8-0603+AF8-1608Metric+ADs-1+ADs-+ADs-LED Red 0603 Imperial+ADs-
+31+ADs-D14+ADs-LED+AF8-0603+AF8-1608Metric+ADs-1+ADs-+ADs-LED White 0603 Imperial+ADs-
+32+ADs-J4+ADs-PinHeader+AF8-1x12+AF8-P2.54mm+AF8-Vertical+ADs-2+ADs-+ADs-Pin Header 1x12 P2.54mm Vertical+ADs-
+33+ADs-J3+ADs-PinHeader+AF8-1x4+AF8-P2.54mm+AF8-Vertical+ADs-1+ADs-+ADs-Pin Header 1x4 P2.54mm Vertical+ADs-
+34+ADs-U4+ADs-Texas+AF8-S+AC0-PWSON+AC0-N10+AF8-ThermalVias+ADs-1+ADs-Texas Instruments+ADs-TPS63060+ADs-
+35+ADs-U3+ADs-SPECIFIC+AF8-BQ25672RQMR+ADs-1+ADs-Texas Instruments+ADs-BQ25672+ADs-
+36+ADs-U2+ADs-SPECIFIC+AF8-TPS7A2601DRVR+AF8-NoThermalVias+ADs-1+ADs-Texas Instruments+ADs-TPS7A2601DRVR+ADs-
+37+ADs-U1+ADs-DFN+AC0-10+AC0-1EP+AF8-3x3mm+AF8-P0.5mm+AF8-EP1.7x2.5mm+ADs-1+ADs-Hynetek+ADs-HUSB238+AF8-002DD+ADs-
+39+ADs-Q9,Q1+ADs-Vishay+AF8-PowerPAK+AF8-1212+AC0-8+AF8-Dual+ADs-2+ADs-Vishay Intertechnology+ADs-Si7223DN+ADs-
+40+ADs-Q7,Q6,Q5+ADs-SOT+AC0-363+AF8-SC+AC0-70+AC0-6+ADs-3+ADs-+ADs-Dual N+AC0-Channel MOSFET BSS138PS +IBM- Package: SOT+AC0-363+ADs-
+41+ADs-Q4,Q3,Q2+ADs-Vishay+AF8-PowerPAK+AF8-1212+AC0-8+AF8-Dual+ADs-3+ADs-+ADs-Si7224DN+ADs-
+42+ADs-L2,L1+ADs-L+AF8-6.3x6.3+AF8-H3+ADs-2+ADs-+ADs-SMD Inductor 1uH 20+ACU- Isat 22A Irms 12A +IBM- 0630 Imperial+ADs-
+44+ADs-D13,D12,D2,D1+ADs-D+AF8-SOD+AC0-323+ADs-4+ADs-+ADs-Schottky Diode 1N5819WS +IBM- Package: SOD+AC0-323+ADs-
+45+ADs-D11,D5,D4+ADs-D+AF8-SMF+ADs-3+ADs-+ADs-SMF24A +IBM- Package: SMF+ADs-
+46+ADs-D10+ADs-D+AF8-SMA+ADs-1+ADs-+ADs-1SMA4747A +IBM- Package: SMA+ADs-
+47+ADs-D9,D6+ADs-SOT+AC0-23+AC0-6+ADs-2+ADs-+ADs-SMF05CT1G+ADs-
+48+ADs-D8,D7+ADs-D+AF8-SMA+ADs-2+ADs-+ADs-1SMA4745A +IBM- Package: SMA+ADs-
+49+ADs-D3+ADs-D+AF8-SOD+AC0-123F+ADs-1+ADs-+ADs-SMF16CA +IBM- Package: SOD+AC0-123F+ADs-
+50+ADs-C4,C3+ADs-C+AF8-0805+AF8-2012Metric+ADs-2+ADs-+ADs-2.2uF 35V+ADs-
+52+ADs-J1+ADs-USB+AF8-C+AF8-Receptacle+AF8-GCT+AF8-USB4105+AC0-xx+AC0-A+AF8-16P+AF8-TopMnt+AF8-Horizontal+ADs-1+ADs-+ADs-USB+AC0-C Receptacle GCT USB4105+AC0-xx+AC0-A 16P Top Mount Horizontal+ADs-

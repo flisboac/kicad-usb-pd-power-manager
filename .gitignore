@@ -1,0 +1,16 @@
+*.log
+*-backups/
+*-bak
+*.bak
+*.old
+*_old
+*-old
+*-bak
+*.lck
+~*
+jlcpcb/
+freerouting.*
+.$
+#*#
+\#*\#
+.\$*
