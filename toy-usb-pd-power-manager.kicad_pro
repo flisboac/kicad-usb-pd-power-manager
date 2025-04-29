@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.2,
-          "width": 0.7
+          "height": 0.15,
+          "width": 0.55
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.3
         }
       },
       "diff_pair_dimensions": [
@@ -139,7 +139,7 @@
         "min_track_width": 0.2,
         "min_via_annular_width": 0.2,
         "min_via_diameter": 0.4,
-        "solder_mask_to_copper_clearance": 0.0,
+        "solder_mask_to_copper_clearance": 0.005,
         "use_height_for_length_calcs": false
       },
       "teardrop_options": [
@@ -195,6 +195,8 @@
         0.381,
         0.508,
         0.762,
+        1.016,
+        1.143,
         1.27,
         1.524,
         1.905
@@ -261,12 +263,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "pin_to_pin|1193800|863600|317d98b9-aa62-40fd-94d2-734f2437f457|5d16b5ac-d005-4bda-b626-d1aa80af5242|/58823b06-e193-4eff-a0b4-40b56d14f41f|/58823b06-e193-4eff-a0b4-40b56d14f41f|/58823b06-e193-4eff-a0b4-40b56d14f41f",
-        "Although the PAD is not connected to anything, it needs to be connected to a big copper plane in order to help with heat dissipation. The datasheet says the connection of this pin to ground is allowed."
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -652,6 +649,14 @@
       {
         "netclass": "MidPower2A",
         "pattern": "/VLDO_VIN"
+      },
+      {
+        "netclass": "HighPower5A",
+        "pattern": "/USB_VBUS_PRE"
+      },
+      {
+        "netclass": "HighPower5A",
+        "pattern": "/USB_VBUS_D"
       }
     ]
   },

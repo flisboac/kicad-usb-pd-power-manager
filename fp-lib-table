@@ -21,4 +21,5 @@
   (lib (name "mixlib-connector-jumper")(type "KiCad")(uri "${KIPRJMOD}/ext/mixlib-kicad/footprints/mixlib-connector-jumper.pretty")(options "")(descr ""))
   (lib (name "mixlib-generic-so")(type "KiCad")(uri "${KIPRJMOD}/ext/mixlib-kicad/footprints/mixlib-generic-so.pretty")(options "")(descr ""))
   (lib (name "mixlib-generic-sot")(type "KiCad")(uri "${KIPRJMOD}/ext/mixlib-kicad/footprints/mixlib-generic-sot.pretty")(options "")(descr ""))
+  (lib (name "mixlib-generic-son")(type "KiCad")(uri "${KIPRJMOD}/ext/mixlib-kicad/footprints/mixlib-generic-son.pretty")(options "")(descr ""))
 )

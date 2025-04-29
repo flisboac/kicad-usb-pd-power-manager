@@ -1,4 +1,4 @@
-25293113445250747
+25291369079979679
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -101373,6 +101373,13 @@ Transistor
 0
 8
 8
+mixlib-generic-son
+Diodes_PowerDI3333-8_UXC_3.3x3.3mm_P0.65mm
+Diodes Incorporated PowerDI3333-8 UXC, 3.05x3.05x0.8mm Body, https://www.diodes.com/assets/Package-Files/PowerDI3333-8%20(Type%20UXC).pdf
+PowerDI 0.65
+0
+14
+6
 mixlib-generic-sot
 SOT-363_SC-70-6
 SOT-363, SC-70-6, SC-88
@@ -101459,20 +101466,6 @@ SPECIFIC_BQ25672RQMR
 29
 mixlib-pmic-battery
 SPECIFIC_MAX172x5G_21-0137_T1433-2C_MXM
-
-
-0
-15
-15
-mixlib-pmic-battery
-SPECIFIC_MAX172x5G_21-0137_T1433-2C_MXM-L
-
-
-0
-15
-15
-mixlib-pmic-battery
-SPECIFIC_MAX172x5G_21-0137_T1433-2C_MXM-M
 
 
 0

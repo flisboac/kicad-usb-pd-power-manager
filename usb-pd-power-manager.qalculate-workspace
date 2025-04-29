@@ -532,6 +532,131 @@ history_time=1745418214
 history_expression=330k Ohm + 51k Ohm
 history_parse=((<span style="color:#005858">330</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>) + ((<span style="color:#005858">51</span> × <span style="color:#005858">1000</span>) <span style="color:#008000">ohms</span>)
 history_result=<span style="color:#005858">381</span> <span style="color:#008000">kΩ</span>
+history_time=1745448405
+history_expression=bq25672_calculate_Iripple_buck(Vbus, Vsys, L) := ((\y × (\x − \y))/(\x × bq25672_Fsw × \z)
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> × (<span style="color:#585800"><i class="symbol">x</i></span> − <span style="color:#585800"><i class="symbol">y</i></span>)) ∕ (<span style="color:#585800"><i class="symbol">x</i></span> <span style="color:#008000">barn·farad·seconds</span> × <span style="color:#585800"><i class="symbol">z</i></span>), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple_buck(Vbus, Vsys, L)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x+(-1)*\y)*(\x b*F*s*\z)^-1</i></span>
+history_time=1745448437
+history_expression=bq25672_Fsw = 1.5MHz
+history_parse=save(<span style="color:#005858">1.5</span> <span style="color:#008000">megahertz</span>, <span style="color:#585800"><i class="symbol">bq25672_Fsw</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">1.5</span> <span style="color:#008000">MHz</span>
+history_time=1745448439
+history_expression=bq25672_calculate_Iripple_buck(Vbus, Vsys, L) := ((\y × (\x − \y))/(\x × bq25672_Fsw × \z)
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> × (<span style="color:#585800"><i class="symbol">x</i></span> − <span style="color:#585800"><i class="symbol">y</i></span>)) ∕ (<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800">bq25672<sub>Fsw</sub></span> × <span style="color:#585800"><i class="symbol">z</i></span>), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple_buck(Vbus, Vsys, L)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x+(-1)*\y)*(\x*bq25672_Fsw*\z)^-1</i></span>
+history_time=1745448479
+history_expression=bq25672_calculate_Iripple_buck(5V, 13V, 1uH)
+history_parse=bq25672CalculateIrippleBuck(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>, <span style="color:#005858">1</span> <span style="color:#008000">microhenry</span>)
+history_result_approximate=<span style="color:#005858">−</span><span style="color:#005858">13.866 666 67</span> <span style="color:#008000">A</span>
+history_time=1745448520
+history_expression=bq25672_L = 1.5uH
+history_parse=save(<span style="color:#005858">1.5</span> <span style="color:#008000">microhenrys</span>, <span style="color:#585800"><i class="symbol">bq25672_L</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">1.5</span> <span style="color:#008000">μH</span>
+history_time=1745448538
+history_expression=bq25672_calculate_Iripple_buck(Vbus, Vsys) := ((\y × (\x − \y))/(\x × bq25672_Fsw × bq25672_L)
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> × (<span style="color:#585800"><i class="symbol">x</i></span> − <span style="color:#585800"><i class="symbol">y</i></span>)) ∕ (<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800">bq25672<sub>Fsw</sub></span> × <span style="color:#585800">bq25672<sub>L</sub></span>), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple_buck(Vbus, Vsys)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x+(-1)*\y)*(\x*bq25672_Fsw*bq25672_L)^-1</i></span>
+history_time=1745448571
+history_expression=bq25672_calculate_Iripple_boost(Vbus, Vsys) := ((\x × (\y − \x))/(\y × bq25672_Fsw × bq25672_L)
+history_parse=save((<span style="color:#585800"><i class="symbol">x</i></span> × (<span style="color:#585800"><i class="symbol">y</i></span> − <span style="color:#585800"><i class="symbol">x</i></span>)) ∕ (<span style="color:#585800"><i class="symbol">y</i></span> × <span style="color:#585800">bq25672<sub>Fsw</sub></span> × <span style="color:#585800">bq25672<sub>L</sub></span>), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple_boost(Vbus, Vsys)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\x*(\y+(-1)*\x)*(\y*bq25672_Fsw*bq25672_L)^-1</i></span>
+history_time=1745448577
+history_expression=bq25672_calculate_Iripple_buck(5V, 13V)
+history_parse=bq25672CalculateIrippleBuck(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">−</span><span style="color:#005858">9.244 444 444</span> <span style="color:#008000">A</span>
+history_time=1745448627
+history_expression=bq25672_calculate_Iripple_buck(Vbus, Vsys) := ((\y × (\x − \y))/(\x × bq25672_Fsw × bq25672_L)
+history_parse=save((<span style="color:#585800"><i class="symbol">y</i></span> × (<span style="color:#585800"><i class="symbol">x</i></span> − <span style="color:#585800"><i class="symbol">y</i></span>)) ∕ (<span style="color:#585800"><i class="symbol">x</i></span> × <span style="color:#585800">bq25672<sub>Fsw</sub></span> × <span style="color:#585800">bq25672<sub>L</sub></span>), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple_buck(Vbus, Vsys)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">\y*(\x+(-1)*\y)*(\x*bq25672_Fsw*bq25672_L)^-1</i></span>
+history_time=1745448631
+history_expression=bq25672_calculate_Iripple_buck(5V, 13V)
+history_parse=bq25672CalculateIrippleBuck(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">−</span><span style="color:#005858">9.244 444 444</span> <span style="color:#008000">A</span>
+history_time=1745448826
+history_expression=bq25672_calculate_Iripple(Vbus, Vsys) := max(bq25672_calculate_Iripple_buck(\x, \y), bq25672_calculate_Iripple_boost(\x, \y))
+history_parse=save(max([bq25672CalculateIrippleBuck(<span style="color:#585800"><i class="symbol">x</i></span>, <span style="color:#585800"><i class="symbol">y</i></span>)&nbsp; bq25672CalculateIrippleBoost(<span style="color:#585800"><i class="symbol">x</i></span>, <span style="color:#585800"><i class="symbol">y</i></span>)]), <span style="color:#585800"><i class="symbol">bq25672_calculate_Iripple(Vbus, Vsys)</i></span>)
+history_result=<span style="color:#585800"><i class="symbol">max([bq25672_calculate_Iripple_buck(\x,\y) bq25672_calculate_Iripple_boost(\x,\y)])</i></span>
+history_time=1745448844
+history_expression=bq25672_calculate_Iripple(5V, 13V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">1.367 521 368</span> <span style="color:#008000">A</span>
+history_time=1745448857
+history_expression=bq25672_calculate_Iripple(24V, 13V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">24</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">2.648 148 148</span> <span style="color:#008000">A</span>
+history_time=1745448877
+history_expression=bq25672_calculate_Iripple(5V, 3.6V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">3.6</span> <span style="color:#008000">volts</span>)
+history_result=<span style="color:#005858">448</span> <span style="color:#008000">mA</span>
+history_time=1745448882
+history_expression=bq25672_calculate_Iripple(24V, 3.6V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">24</span> <span style="color:#008000">volts</span>, <span style="color:#005858">3.6</span> <span style="color:#008000">volts</span>)
+history_result=<span style="color:#005858">1.36</span> <span style="color:#008000">A</span>
+history_time=1745449126
+history_expression=bq25672_calculate_Iripple(12V, 24V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">12</span> <span style="color:#008000">volts</span>, <span style="color:#005858">24</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">2.666 666 667</span> <span style="color:#008000">A</span>
+history_time=1745450038
+history_expression=bq25672_L = 1uH
+history_parse=save(<span style="color:#005858">1</span> <span style="color:#008000">microhenry</span>, <span style="color:#585800"><i class="symbol">bq25672_L</i></span>, <span style="color:#585800"><i class="symbol">Temporary</i></span>, <span style="color:#585800"><i class="symbol"></i></span>, <span style="color:#005858">1</span>)
+history_result=<span style="color:#005858">1</span> <span style="color:#008000">μH</span>
+history_time=1745450040
+history_expression=bq25672_calculate_Iripple(12V, 24V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">12</span> <span style="color:#008000">volts</span>, <span style="color:#005858">24</span> <span style="color:#008000">volts</span>)
+history_result=<span style="color:#005858">4</span> <span style="color:#008000">A</span>
+history_time=1745450046
+history_expression=bq25672_calculate_Iripple(24V, 13V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">24</span> <span style="color:#008000">volts</span>, <span style="color:#005858">13</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">3.972 222 222</span> <span style="color:#008000">A</span>
+history_time=1745450053
+history_expression=bq25672_calculate_Iripple(24V, 14V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">24</span> <span style="color:#008000">volts</span>, <span style="color:#005858">14</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">3.888 888 889</span> <span style="color:#008000">A</span>
+history_time=1745450058
+history_expression=bq25672_calculate_Iripple(24V, 11V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">24</span> <span style="color:#008000">volts</span>, <span style="color:#005858">11</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">3.972 222 222</span> <span style="color:#008000">A</span>
+history_time=1745450073
+history_expression=bq25672_calculate_Iripple(5V, 11V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">11</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">1.818 181 818</span> <span style="color:#008000">A</span>
+history_time=1745450077
+history_expression=bq25672_calculate_Iripple(5V, 12V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">12</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">1.944 444 444</span> <span style="color:#008000">A</span>
+history_time=1745450079
+history_expression=bq25672_calculate_Iripple(5V, 10V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">10</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">1.666 666 667</span> <span style="color:#008000">A</span>
+history_time=1745450084
+history_expression=bq25672_calculate_Iripple(5V, 16V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">5</span> <span style="color:#008000">volts</span>, <span style="color:#005858">16</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">2.291 666 667</span> <span style="color:#008000">A</span>
+history_time=1745450088
+history_expression=bq25672_calculate_Iripple(8V, 16V)
+history_parse=bq25672CalculateIripple(<span style="color:#005858">8</span> <span style="color:#008000">volts</span>, <span style="color:#005858">16</span> <span style="color:#008000">volts</span>)
+history_result_approximate=<span style="color:#005858">2.666 666 667</span> <span style="color:#008000">A</span>
+expression_history=bq25672_calculate_Iripple(8V, 16V)
+expression_history=bq25672_calculate_Iripple(5V, 16V)
+expression_history=bq25672_calculate_Iripple(5V, 10V)
+expression_history=bq25672_calculate_Iripple(5V, 12V)
+expression_history=bq25672_calculate_Iripple(5V, 11V)
+expression_history=bq25672_calculate_Iripple(24V, 11V)
+expression_history=bq25672_calculate_Iripple(24V, 14V)
+expression_history=bq25672_calculate_Iripple(24V, 13V)
+expression_history=bq25672_calculate_Iripple(12V, 24V)
+expression_history=bq25672_L = 1uH
+expression_history=bq25672_calculate_Iripple(24V, 3.6V)
+expression_history=bq25672_calculate_Iripple(5V, 3.6V)
+expression_history=bq25672_calculate_Iripple(5V, 13V)
+expression_history=bq25672_calculate_Iripple(Vbus, Vsys) := max(bq25672_calculate_Iripple_buck(\x, \y), bq25672_calculate_Iripple_boost(\x, \y))
+expression_history=bq25672_calculate_Iripple_buck(5V, 13V)
+expression_history=bq25672_calculate_Iripple_buck(Vbus, Vsys) := ((\y × (\x − \y))/(\x × bq25672_Fsw × bq25672_L)
+expression_history=bq25672_calculate_Iripple_boost(Vbus, Vsys) := ((\x × (\y − \x))/(\y × bq25672_Fsw × bq25672_L)
+expression_history=bq25672_L = 1.5uH
+expression_history=bq25672_calculate_Iripple_buck(5V, 13V, 1uH)
+expression_history=bq25672_calculate_Iripple_buck(Vbus, Vsys, L) := ((\y × (\x − \y))/(\x × bq25672_Fsw × \z)
+expression_history=bq25672_Fsw = 1.5MHz
 expression_history=330k Ohm + 51k Ohm
 expression_history=tps63070_calculate_Vout(1.2M Ohm, 330k Ohm + 51k Ohm)
 expression_history=tps63070_calculate_Vout(1.2M Ohm, 228359 Ohm)
@@ -611,24 +736,7 @@ expression_history=Vldo_fb_r2_5V = tps7a26_find_r2(5V, Vldo_fb_r1)
 expression_history=r_parallel_2(1000 ohm, 1000 ohm)
 expression_history=r_parallel_2(R1, R2):=1/(1/\x+1/\y)
 expression_history=r_parallel(v: vector):=1/Σ(1 / \x, −inf, +inf)
-expression_history=r_parallel(v: vector):=1/Σ(1/\x, −inf, +inf)
-expression_history=Σ(1/\x, 0, 0)
-expression_history=Vldo_fb_r1 = 2M Ohm
-expression_history=tps7a26_find_r2(Vout, R1):=\y/((\x/tps7a26_Vfb)−1)
-expression_history=tps7a26_find_r2(Vout, r1):=\y/((\x/tps7a26_Vfb)−1)
-expression_history=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm)
-expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= (\x / (tps7a26_Ifb × 100))
-expression_history=tps7a26_Vout_check(2.48 V, 1k ohm, 1k ohm, 0)
-expression_history=tps7a26_calculate_Vout(1000 ohm, 1000 ohm)
-expression_history=tps7a26_Vout_check(2.48 V, 1 Kohm, 1 Kohm)
-expression_history=tps7a26_Ifb := 10 nA
-expression_history=tps7a26_Vout_check(Vout, R1, R2) := ((\y + \z) <= ((\x / (tps7a26_Ifb × 100))))
-expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / (tps7a26_Ifb × 100)))
-expression_history=tps7a26_Vout_check(Vout, R1, R2) := (\y + \z) <= ((\x / tps7a26_Ifb × 100))
-expression_history=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x / \y)
-expression_history=tps7a26_calculate_Vout(R1, R2):= tps7a26_Vfb × (1 + \x + \y)
-expression_history=tps7a26_Vfb = 1.24V
 
 [Definitions]
 <?xml version="1.0"?>
-<QALCULATE version="5.5.2"><category><title>Temporary</title><variable><names>s:tps7a26_Vfb</names><value>(31/25) V</value></variable><variable><names>s:tps7a26_Ifb</names><value>10 nA</value></variable><variable><names>Vldo_fb_r1</names><value>1500000 ohm</value></variable><variable><names>Vldo_fb_r2_3V3</names><value>(93000000/103) ohm</value></variable><variable><names>Vldo_fb_r2_5V</names><value>(31000000/47) ohm</value></variable><variable><names>Vldo_fb_r2_5</names><value>(23250000/47) ohm</value></variable><variable><names>s:tps63070_Vfb</names><value>(4/5) V</value></variable></category><category><title>Temporary</title><function><names>tps7a26_calculate_Vout</names><expression>tps7a26_Vfb*(1+\x*\y^-1)</expression></function><function><names>tps7a26_Vout_check</names><expression>\y+\z&lt;=\x*(tps7a26_Ifb*100)^-1</expression></function><function><names>tps7a26_find_r2</names><expression>\y*(\x*tps7a26_Vfb^-1+(-1)*1)^-1</expression></function><function><names>as:r_parallel</names><expression>1*sum(1*\x^-1,(-1) in,in)^-1</expression></function><function><names>r_parallel_2</names><expression>\x*\y*(\x+\y)^-1</expression></function><function><names>tps63070_calculate_Vout</names><expression>(4/5) V*((\x+\y)*\y^-1)</expression></function><function><names>tps63070_find_r2</names><expression>\y*(\x*((4/5) V)^-1+(-1)*1)^-1</expression></function><function><names>r_parallel_find_r2</names><expression>\x*\y*(1+(-1)*\x)^-1</expression></function></category></QALCULATE>
+<QALCULATE version="5.5.2"><category><title>Temporary</title><variable><names>s:tps7a26_Vfb</names><value>(31/25) V</value></variable><variable><names>s:tps7a26_Ifb</names><value>10 nA</value></variable><variable><names>Vldo_fb_r1</names><value>1500000 ohm</value></variable><variable><names>Vldo_fb_r2_3V3</names><value>(93000000/103) ohm</value></variable><variable><names>Vldo_fb_r2_5V</names><value>(31000000/47) ohm</value></variable><variable><names>Vldo_fb_r2_5</names><value>(23250000/47) ohm</value></variable><variable><names>s:tps63070_Vfb</names><value>(4/5) V</value></variable><variable><names>s:bq25672_Fsw</names><value>1500000 Hz</value></variable><variable><names>s:bq25672_L</names><value>(1/1000000) H</value></variable></category><category><title>Temporary</title><function><names>tps7a26_calculate_Vout</names><expression>tps7a26_Vfb*(1+\x*\y^-1)</expression></function><function><names>tps7a26_Vout_check</names><expression>\y+\z&lt;=\x*(tps7a26_Ifb*100)^-1</expression></function><function><names>tps7a26_find_r2</names><expression>\y*(\x*tps7a26_Vfb^-1+(-1)*1)^-1</expression></function><function><names>as:r_parallel</names><expression>1*sum(1*\x^-1,(-1) in,in)^-1</expression></function><function><names>r_parallel_2</names><expression>\x*\y*(\x+\y)^-1</expression></function><function><names>tps63070_calculate_Vout</names><expression>(4/5) V*((\x+\y)*\y^-1)</expression></function><function><names>tps63070_find_r2</names><expression>\y*(\x*((4/5) V)^-1+(-1)*1)^-1</expression></function><function><names>r_parallel_find_r2</names><expression>\x*\y*(1+(-1)*\x)^-1</expression></function><function><names>bq25672_calculate_Iripple_buck</names><expression>\y*(\x+(-1)*\y)*(\x*bq25672_Fsw*bq25672_L)^-1</expression></function><function><names>bq25672_calculate_Iripple_boost</names><expression>\x*(\y+(-1)*\x)*(\y*bq25672_Fsw*bq25672_L)^-1</expression></function><function><names>bq25672_calculate_Iripple</names><expression>max([bq25672_calculate_Iripple_buck(\x,\y) bq25672_calculate_Iripple_boost(\x,\y)])</expression></function></category></QALCULATE>
